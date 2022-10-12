@@ -1,6 +1,7 @@
 package at.ac.fhcampuswien;
 
 import java.util.Collections;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class App {
@@ -9,7 +10,7 @@ public class App {
     public void largestNumber(){
         int i = 1;
         double n=0, input=1;
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in).useLocale(Locale.getDefault());
         while(input>0){
             System.out.printf("Number %d: ", i++);
             input = sc.nextDouble();
